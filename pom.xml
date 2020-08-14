@@ -109,11 +109,6 @@
           <artifactId>spring-orm</artifactId>
           <version>4.3.9.RELEASE</version>
       </dependency>
-      <dependency>
-          <groupId>com.mchange</groupId>
-          <artifactId>c3p0</artifactId>
-          <version>0.9.5.2</version>
-      </dependency>
   </dependencies>
 
   <build>
