@@ -21,16 +21,34 @@
     </bean>
 
     <!--事务管理器-->
-    <bean id="dataSourceTransactionManger" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+    <!--<bean id="dataSourceTransactionManger" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
         <property name="dataSource" ref="dataSource"></property>
     </bean>
-    <tx:annotation-driven transaction-manager="dataSourceTransactionManger" />
-
+    <tx:annotation-driven transaction-manager="dataSourceTransactionManger" />-->
+    <!--逻辑删除-->
+    <bean id="globalConfig" class="com.baomidou.mybatisplus.core.config.GlobalConfig">
+        <property name="dbConfig">
+            <bean class="com.baomidou.mybatisplus.core.config.GlobalConfig$DbConfig">
+                <property name="logicDeleteValue" value="1"></property>
+                <property name="logicDeleteField" value="0"></property>
+            </bean>
+        </property>
+    </bean>
     <bean id="sqlSessionFactoryBean" class="com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean">
         <!--配置数据库信息-->
         <property name="dataSource" ref="dataSource"></property>
         <!--配置别名-->
         <property name="typeAliasesPackage" value="com.entity"></property>
+        <property name="plugins">
+            <!--阻止删除整个表或者全部更新-->
+            <bean class="com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor">
+                <property name="sqlParserList">
+                    <list>
+                        <bean class="com.baomidou.mybatisplus.extension.parsers.BlockAttackSqlParser"></bean>
+                    </list>
+                </property>
+            </bean>
+        </property>
         <!--setting设置-->
         <property name="configuration">
             <bean class="com.baomidou.mybatisplus.core.MybatisConfiguration">
@@ -41,6 +59,6 @@
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <property name="basePackage" value="mapper"></property>
     </bean>
-    <context:component-scan base-package="service"></context:component-scan>
-    <context:component-scan base-package="entity"></context:component-scan>
+    <!-- <context:component-scan base-package="service"></context:component-scan>
+     <context:component-scan base-package="entity"></context:component-scan>-->
 </beans>
