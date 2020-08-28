@@ -8,9 +8,14 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>首页</title>
+    <title>沙雕学院</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <h1>欢迎来到沙雕学院</h1>
+
+<script src="js/index.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.js"></script>
 </body>
 </html>
