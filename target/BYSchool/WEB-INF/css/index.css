@@ -1,5 +1,19 @@
 /***************通用格式  begin*****************/
-
+#body{
+    color: black;
+    font-family: "Arial Black";
+}
+a:hover{
+    text-decoration:none;
+    color:#333;
+}
+a{
+    text-decoration:none;
+    color:#333;
+}
+ul, ol ,li{
+    list-style: none;
+}
 /***************通用格式  end*****************/
 
 
