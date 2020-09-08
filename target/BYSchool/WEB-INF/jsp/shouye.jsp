@@ -19,13 +19,13 @@
 <!----------------------头部begin--------------------->
 <header id="xf_header">
     <!--上部分-->
-    <div class="top-bar">
+    <div class="top-bar d-none d-sm-none d-md-none d-lg-block">
         <div class="container">
             <div class="row">
-                <div class="top-bar-1">1</div>
-                <div class="top-bar-2">2</div>
-                <div class="top-bar-3">3</div>
-                <div class="top-bar-4">4</div>
+                <div class="top-bar-1 col-md-2">1</div>
+                <div class="top-bar-2 col-md-5">2</div>
+                <div class="top-bar-3 col-md-3">3</div>
+                <div class="top-bar-4 col-md-2">4</div>
             </div>
         </div>
     </div>
