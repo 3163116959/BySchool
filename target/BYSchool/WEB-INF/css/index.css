@@ -19,7 +19,12 @@ ul, ol ,li{
 
 /***************头部格式  begin*****************/
 #xf_header{
-    background-color: red;
+
+}
+#xf_header .top-bar{
+    height: 40px;
+    line-height: 39px;
+    border-bottom: 1px solid #e0e0e0;
 }
 /***************头部格式  end*****************/
 
