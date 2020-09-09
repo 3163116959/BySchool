@@ -19,13 +19,12 @@
 <!----------------------头部begin--------------------->
 <header id="xf_header">
     <!--上部分-->
-    <div class="top-bar d-none d-sm-block d-md-block d-lg-block">
+    <div class="top-bar d-none d-sm-block d-md-block d-lg-block text-center text-muted">
         <div class="container">
             <div class="row">
-                <div class="top-bar-1 col-md-2">1</div>
-                <div class="top-bar-2 col-md-5">2</div>
-                <div class="top-bar-3 col-md-3">3</div>
-                <div class="top-bar-4 col-md-2">4</div>
+                <div class="top-bar-1 col-md-3">微信联系</div>
+                <div class="top-bar-2 col-md-6">电话：15531051926(陌生号码懒的接)</div>
+                <div class="top-bar-4 col-md-3"><a href="javascript:;">登陆</a></div>
             </div>
         </div>
     </div>
