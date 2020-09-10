@@ -29,6 +29,20 @@ ul, ol ,li{
 #xf_header .top-bar .container .row>div+div{
     border-left: 1px solid #e0e0e0;
 }
+#xf_header .top-bar .container .row .top-bar-1 a{
+    position: relative;
+}
+#xf_header .top-bar .container .row .top-bar-1 a img{
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    display: none;
+}
+#xf_header .top-bar .container .row .top-bar-1 a:hover img{
+    display: block;
+}
 /***************头部格式  end*****************/
 
 

@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="shortcut icon" href="image/Dig Dug.ico"/>
-    <title>大声点，我听不见</title>
+    <title>对，很有精神</title>
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body style="height: 3000px">
@@ -22,9 +22,18 @@
     <div class="top-bar d-none d-sm-block d-md-block d-lg-block text-center text-muted">
         <div class="container">
             <div class="row">
-                <div class="top-bar-1 col-md-3">微信联系</div>
+                <div class="top-bar-1 col-md-3">
+                    <a href="javascript:;" class="text-muted">
+                       <span>微信联系</span>
+                       <img src="image/联系.jpg" alt="微信图片" style="width: 90px;">
+                    </a>
+                </div>
                 <div class="top-bar-2 col-md-6">电话：15531051926(陌生号码懒的接)</div>
-                <div class="top-bar-4 col-md-3"><a href="javascript:;">登陆</a></div>
+                <div class="top-bar-4 col-md-3">
+                    <a href="javascript:;">
+                        立即登陆
+                    </a>
+                </div>
             </div>
         </div>
     </div>
